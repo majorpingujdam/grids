@@ -1,46 +1,41 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 10% 5% auto 10%;
+    height: 97vh;
+    grid-template-areas:
+    "hd hd"
+    "asd nav"
+    "asd art"
+    "ftr ftr"
 }
 
 header {
-    background-color: yellow;
-}
-
-nav {
-    background-color: green;
-}
-
-article {
-    background-color: green;
+    grid-area: hd;
+    background-color: rgb(185, 227, 152);
+    text-align: center;
 }
 
 aside {
-    background-color: purple;
+    grid-area: asd;
+    background-color: rgb(218, 203, 46);
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(243, 210, 48);
+    text-align: center;
+}
+
+article {
+    grid-area: art;
+    background-color: rgb(34, 137, 102);
+    text-align: center;
 }
 
 footer {
-    background-color: pink;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-gap: 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff; /* set text color to white for better visibility on green background */
-}
-
-footer {
-    margin-top: auto;
+    grid-area: ftr;
+    background-color: rgb(24, 53, 170);
+    text-align: center;
 }
