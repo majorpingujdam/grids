@@ -12,13 +12,13 @@
 
 header {
     grid-area: hd;
-    background-color: rgb(185, 227, 152);
+    background-color: rgb(240, 171, 52);
     text-align: center;
 }
 
 aside {
     grid-area: asd;
-    background-color: rgb(218, 203, 46);
+    background-color: rgb(227, 118, 41);
     text-align: center;
 }
 
@@ -36,6 +36,6 @@ article {
 
 footer {
     grid-area: ftr;
-    background-color: rgb(24, 53, 170);
+    background-color: rgb(236, 140, 123);
     text-align: center;
 }
